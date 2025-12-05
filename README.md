@@ -1,5 +1,11 @@
 # 🛠️ OCP Easy Install on AWS
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-mmartofel-blue)](https://github.com/mmartofel/ocp-easy-install-aws)
+[![OpenShift Ready](https://img.shields.io/badge/OpenShift-Ready-brightgreen)](https://www.openshift.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
+---
+
 **OCP Easy Install on AWS** is a set of scripts that automate the installation of **OpenShift 4.x** clusters on **AWS**.  
 It simplifies the setup process by handling instance type selection, pull secrets, SSH keys, and generating the OpenShift `install-config.yaml`.
 
@@ -19,11 +25,11 @@ It simplifies the setup process by handling instance type selection, pull secret
 
 ## ⚙️ Requirements
 
-- Bash 4+  
+- Bash 3+  
 - AWS CLI configured with appropriate credentials  
 - OpenShift Installer (matching desired OpenShift version)  
 - Pull secret file from [Red Hat OpenShift](https://cloud.redhat.com/openshift/install)  
-- SSH key for cluster access  
+- SSH key for cluster access (or you can generate it with ./ssh/gen.sh)
 
 ---
 
@@ -44,6 +50,9 @@ export CLUSTER_NAME=zenek
 export CLUSTER_DIR=./config
 export BASE_DOMAIN=example.com
 ```
+
+or do nothing and stay with default set at install.sh
+
 3. **Run the installation script:**
 
 ```bash
@@ -51,14 +60,20 @@ export BASE_DOMAIN=example.com
 ```
 
 Follow the interactive prompts to choose master and worker instance types, and OpenShift version.
-The script will generate install-config.yaml and start the cluster installation.
+The script will generate install-config.yaml and start the cluster installation. Once installation is finished, at the end of an output you see all the informations required to connect and use your newly installed Red Hat OpenShift cluster. Enjoy!
 
 4. **Access your cluster:**
+
+for example using oc CLI
 
 ```bash
 export KUBECONFIG=./config/auth/kubeconfig
 oc status
 ```
+
+or via brawser as of an info passed at the end of paragraph 4 
+
+🗂️ **Directory Structure**
 
 ```graphql
 .
@@ -77,9 +92,15 @@ oc status
 
 You can modify:
 
-instances/master and instances/worker to update available instance types
+```
+./instances/master
+./instances/worker
+```
 
-install-config.yaml template in the script to add extra AWS settings or networking options
+files content to update available AWS instance types, I just provided a few tested, feel free to put your own you need at your cluster.
+
+Here is a great place to use GPU equited instances to start your jouney with AI, best would be Red Hat OpenShift AI ;-)
+
 
 OpenShift version selection to pin a specific patch release
 
