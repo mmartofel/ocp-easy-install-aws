@@ -27,9 +27,11 @@ It simplifies the setup process by handling instance type selection, pull secret
 
 - Bash 3+  
 - AWS CLI configured with appropriate credentials  
-- OpenShift Installer (matching desired OpenShift version)  
+- OpenShift Installer (matching desired OpenShift version, for the time of creation of that repo 4.20)  
 - Pull secret file from [Red Hat OpenShift](https://cloud.redhat.com/openshift/install)  
 - SSH key for cluster access (or you can generate it with ./ssh/gen.sh)
+
+if you missed anything you will be guided by error handling messages
 
 ---
 
