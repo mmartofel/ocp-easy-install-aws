@@ -1,6 +1,6 @@
-# 🛠️ OCP Easy Install on AWS
+# 🛠️ Red Hat OpenShift Easy Install on AWS
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-mmartofel-blue)](https://github.com/mmartofel/ocp-easy-install-aws)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-mmartofel-blue)](https://github.com/mmartofel)
 [![OpenShift Ready](https://img.shields.io/badge/OpenShift-Ready-brightgreen)](https://www.openshift.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
