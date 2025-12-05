@@ -1,0 +1,7 @@
+.vscode/
+openshift-install
+config/
+pull-secret.txt
+logs/
+secrets/
+id_*
