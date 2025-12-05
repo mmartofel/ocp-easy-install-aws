@@ -75,7 +75,7 @@ oc status
 
 or via brawser as of an info passed at the end of paragraph 4 
 
-🗂️ **Directory Structure**
+## 🗂️ Directory Structure
 
 ```graphql
 .
@@ -90,7 +90,7 @@ or via brawser as of an info passed at the end of paragraph 4
     └── install-config.yaml
 ```
 
-🖌️ **Customization**
+## 🖌️ Customization
 
 You can modify:
 
@@ -114,18 +114,17 @@ The script includes pre-flight checks to prevent common errors.
 
 Custom release image override is used to start from most recent or just purposly chosen patch version at the start to save time for 'after install' upgrades chain.
 
-📖 References
+📖 **References**
 
 OpenShift Installation Guide
 
 AWS OpenShift Installer
 
-🤝 Contributing
+🤝 **Contributing**
 
 Feel free to submit issues, pull requests, or suggest new features.
-This project is meant to simplify OpenShift installations for AWS users and is community-driven.
+This project is meant to simplify Red Hat OpenShift installations at AWS for any users and is community-driven.
 
-⚡ License
+⚡ **License**
 
-This repository is licensed under the MIT License. See LICENSE
- for details.
+This repository is licensed under the MIT License. See LICENSE for details.
