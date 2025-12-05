@@ -59,6 +59,8 @@ or do nothing and stay with default set at install.sh
 ./install.sh
 ```
 
+![alt text](./images/install.png)
+
 Follow the interactive prompts to choose master and worker instance types, and OpenShift version.
 The script will generate install-config.yaml and start the cluster installation. Once installation is finished, at the end of an output you see all the informations required to connect and use your newly installed Red Hat OpenShift cluster. Enjoy!
 
