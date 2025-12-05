@@ -13,13 +13,13 @@ It simplifies the setup process by handling instance type selection, pull secret
 
 ## 💡 Features
 
-- ✅ Automatic detection of **AWS region** and **base domain** (Route53)  
-- ✅ Pre-flight checks for **openshift-install**, AWS credentials, SSH keys, and pull secrets  
-- ✅ Interactive selection of **master and worker instance types**  
-- ✅ Easy selection of **OpenShift versions** from the stable channel  
-- ✅ Automatic generation of **install-config.yaml** with all required fields  
-- ✅ Optional **release image override** with architecture detection  
-- ✅ Fully **colorful and user-friendly output** with icons  
+- ✅ Automatic detection of **AWS region** and **base domain** (Route53)
+- ✅ Pre-flight checks for **openshift-install**, AWS credentials, SSH keys, and pull secrets
+- ✅ Interactive selection of **master and worker instance types**
+- ✅ Easy selection of **OpenShift versions** from the stable channel
+- ✅ Automatic generation of **install-config.yaml** with all required fields
+- ✅ Optional **release image override** with architecture detection
+- ✅ Fully **colorful and user-friendly output** with icons
 
 ---
 
@@ -103,10 +103,7 @@ files content to update available AWS instance types, I just provided a few test
 
 Here is a great place to use GPU equited instances to start your jouney with AI, best would be Red Hat OpenShift AI ;-)
 
-
-OpenShift version selection to pin a specific patch release
-
-⚠️ **Notes**
+## ⚠️ Notes
 
 The installer supports automatic OpenShift version selection from the stable channel (e.g., stable-4.20). You can modify your channel over time, or propose how can we improve that functionality together.
 
@@ -114,17 +111,17 @@ The script includes pre-flight checks to prevent common errors.
 
 Custom release image override is used to start from most recent or just purposly chosen patch version at the start to save time for 'after install' upgrades chain.
 
-📖 **References**
+## 📖 References
 
 OpenShift Installation Guide
 
 AWS OpenShift Installer
 
-🤝 **Contributing**
+## 🤝 Contributing
 
 Feel free to submit issues, pull requests, or suggest new features.
 This project is meant to simplify Red Hat OpenShift installations at AWS for any users and is community-driven.
 
-⚡ **License**
+## ⚡ License
 
 This repository is licensed under the MIT License. See LICENSE for details.
