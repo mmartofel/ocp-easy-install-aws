@@ -222,8 +222,9 @@ set_release_image() {
 # GENERATE INSTALL CONFIG
 ##############################################
 generate_install_config() {
+
+  rm -rf "$CLUSTER_DIR"
   mkdir -p "$CLUSTER_DIR"
-  rm -f "$CLUSTER_DIR/install-config.yaml"
 
   log_info "Generating $CLUSTER_DIR/install-config.yaml ..."
 
