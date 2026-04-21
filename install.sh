@@ -146,17 +146,17 @@ select_instance_type() {
 # FETCH AVAILABLE OCP VERSIONS FOR GIVEN MINOR
 ###############################################
 get_ocp_versions() {
-    local channel="stable-4.20"
+    local channel="stable-4.21" # You can change this to stable-4.20 if you want to target 4.20 versions or any other channel
 
     echo "💡 Fetching OpenShift versions from channel: $channel ..." >&2
 
     ALL_VERSIONS=$(curl -s "https://api.openshift.com/api/upgrades_info/v1/graph?channel=${channel}" \
         | jq -r '.nodes[].version')
 
-    VERSIONS=$(echo "$ALL_VERSIONS" | grep '^4\.20\.' | sort -V)
+    VERSIONS=$(echo "$ALL_VERSIONS" | grep '^4\.21\.' | sort -V)
 
     if [[ -z "$VERSIONS" ]]; then
-        echo "❌ No OpenShift 4.20 versions found in $channel" >&2
+        echo "❌ No OpenShift 4.21 versions found in $channel" >&2
         exit 1
     fi
 
